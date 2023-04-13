@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+* {
+  cursor: pointer;
+}
+
+.card_dashboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 400px;
+}
+
+.button_check_here {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.card_image {
+  width: 50vh !important;
+  border-radius: 20px !important;
+}
+
+.button_logout {
+  background-color: #da1b1b !important;
+  border: none !important;
+  font-size: 15px !important;
+  border-radius: 10px !important;
+  width: 100px !important;
+  padding: 8px !important;
+}
+
+.button_logout:hover {
+  background-color: #a01818 !important;
+}
+
+.icon_navbar_login {
+  width: 30px;
+  height: 30px;
+}
+
+.icon_navbar_login :hover {
+  color: #136aa4;
+}
+
+.nav_dahboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 5px 20px;
+}
+
+.content_dashboard {
+  margin-top: 80px !important;
+  width: 55vh;
+  border-radius: 30px;
+}

@@ -1,0 +1,44 @@
+.form_search_flight {
+  background-color: #1b68da;
+  width: 40%;
+  padding: 20px 10px 15px 10px;
+  border-radius: 10px;
+}
+
+.button_search_flight {
+  background-color: #faff00;
+  color: #1b68da;
+  font-weight: 700;
+  font-size: 15px;
+  border-style: none;
+  padding: 5px;
+  width: 90px;
+  border-radius: 20px;
+  margin-top: 17px;
+}
+
+.button_search_flight:hover {
+  color: #faff00;
+  background-color: #1b68da;
+}
+
+.form_search_flight_section {
+  display: flex;
+  justify-content: end;
+  margin-right: 22px;
+}
+
+.flight_title_form {
+    color: white;
+    font-weight: 600;
+    text-shadow: #808080 1px 2px 2px;
+}
+
+.label_field_flight_search {
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 6px !important;
+    margin-left:2px !important;
+
+}

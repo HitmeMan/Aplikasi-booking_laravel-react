@@ -1,0 +1,38 @@
+.title_flight_schedule {
+  padding-left: 2%;
+  padding-right: 30%;
+  margin-top: 75px;
+  color: white;
+  text-shadow: #808080 3px 4px 3px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 52px;
+}
+
+.title_flight_schedule h1 {
+  color: white;
+  text-shadow: #808080 3px 4px 3px;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 10px;
+}
+
+.title_flight_schedule span {
+  color: white;
+  text-shadow: #808080 3px 4px 3px;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.flight_schedule_table {
+  background-color: white;
+  padding: 15px 15px 15px 15px;
+  border-radius: 3px;
+}
+
+.label_flight_schedule {
+  font-weight: 600 !important;
+  background-color: rgba(27, 104, 218, 0.7) !important;
+  color: white !important;
+  font-size: 16px !important;
+}
