@@ -15,9 +15,8 @@ class CreatePemesanansTable extends Migration
     {
         Schema::create('pemesanans', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
-            $table->foreignId('e-wallet_id');
-            $table->string('status_lunas');
+            $table->unsignedBigInteger('id_mitra');
+            $table->enum('status_lunas', ['lunas', 'belum lunas']);
             $table->integer('grand_total');
             $table->timestamps();
         });

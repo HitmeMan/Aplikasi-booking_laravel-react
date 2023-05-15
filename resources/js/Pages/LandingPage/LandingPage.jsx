@@ -1,11 +1,12 @@
 import { React } from "react";
 import "../LandingPage/LandingPage.css";
-import Service1 from "../../Assets/Service_1.jpg";
-import Service2 from "../../Assets/Service_2.jpg";
+import Service1 from "/public/build/assets/Service_1.jpg";
+import Service2 from "/public/build/assets/Service_2.jpg";
 import { TbHandClick } from "react-icons/tb";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { MdPayment } from "react-icons/md";
-import Footer from "../../Component/Footer/Footer";
+import Footer from "/resources/js/Components/Footer";
+import { Link } from "@inertiajs/react";
 
 const LandingPage = () => {
   return (
@@ -14,15 +15,14 @@ const LandingPage = () => {
         <nav>
           <ul>
             <li>
-              <a href="#">About Us</a>
+              <a href="#aboutUs">About Us</a>
             </li>
             <li>
-              <a href="#">Service</a>
+              <Link href={route('login')}>Login</Link>
             </li>
-            <li>
-              <a href="#">Login</a>
+            <li className="register_btn btn btn-primary">
+              <Link href={route('register')}>Register</Link>
             </li>
-            <button className="register_btn btn btn-primary">Register</button>
           </ul>
         </nav>
         <div className="title_landing_page">
@@ -66,58 +66,9 @@ const LandingPage = () => {
             </div>
             <img src={Service2} alt="img" />
           </div>
-          <div className="service_reason_text" id="service">
-            <h1>Why You Should Choose Our Service ?</h1>
-            <div className="container">
-              <div className="icon_service row justify-content-md-center">
-                <div className="col col-lg-2 text-center">
-                  <TbHandClick
-                    style={{
-                      height: "80px",
-                      width: "80px",
-                      marginBottom: "20px",
-                      color: "#fff",
-                    }}
-                  />
-                  <p className="icon_service_title">Simple</p>
-                  <p className="description_service">
-                    Make transactions anywhere and anytime, through the website.
-                  </p>
-                </div>
-                <div className="icon col col-lg-2 text-center">
-                  <VscWorkspaceTrusted
-                    style={{
-                      height: "80px",
-                      width: "80px",
-                      marginBottom: "20px",
-                      color: "#fff",
-                    }}
-                  />
-                  <p className="icon_service_title">Trusted Service</p>
-                  <p className="description_service">
-                    You will get what you paid for – 100% guaranteed!
-                  </p>
-                </div>
-                <div className="icon col col-lg-2 text-center">
-                  <MdPayment
-                    style={{
-                      height: "80px",
-                      width: "80px",
-                      marginBottom: "20px",
-                      color: "#fff",
-                    }}
-                  />
-                  <p className="icon_service_title">Digital Payments</p>
-                  <p className="description_service">
-                    Payments are becoming more flexible with digital payment
-                    features.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
-        <Footer />
+        <Footer/>
       </div>
     </>
   );

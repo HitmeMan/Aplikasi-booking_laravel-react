@@ -1,6 +1,6 @@
 import React from "react";
-import "../Footer/Footer.css";
-import wonderfulIcon from "../../Assets/Wonderful_Indonesia_Icon.png";
+import "/resources/js/Components/Footer.css";
+import wonderfulIcon from "/public/build/assets/Wonderful_Indonesia_Icon.png";
 import {
   FaWhatsapp,
   FaInstagram,

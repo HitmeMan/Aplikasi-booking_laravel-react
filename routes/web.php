@@ -16,6 +16,10 @@ use Inertia\Inertia;
 |
 */
 
+route::get('/landingpage',function(){
+    return Inertia::render('LandingPage/LandingPage');
+});
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
